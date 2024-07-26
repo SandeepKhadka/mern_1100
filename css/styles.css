@@ -1,0 +1,41 @@
+/* 
+    CSS syntax
+
+    selectors{
+        css-property : property-value
+    }
+
+    selectors ex tags
+        body
+        p
+        h1
+        span
+        table
+
+*/
+body{
+    /* background-color: wheat; */
+}
+
+table{
+    border: 1px solid red;
+    padding: 16px;
+    border-collapse: collapse;
+    background-color: wheat;
+}
+
+th, td{
+    padding: 8px;
+    border: 1px solid;
+}
+
+p{
+    border: 2px solid green;
+    padding: 16px;
+    margin: 16px;
+    font-size: 20px;
+}
+
+#table-two{
+    margin-top: 32px;
+}

@@ -1,0 +1,27 @@
+1. git init
+2. git remote add origin <git url>
+    eg git remote add origin https://github.com/SandeepKhadka/mern_1100.git
+3. (optional) git remote -v
+
+4. git add <file_name> (for individual file)
+    eg git add index.html
+5. git commit -m "what have you done or added"
+    eg git commit -m "index"
+6. git push  
+    eg git push origin master
+
+
+git add for all files
+git add .
+
+
+
+
+
+
+git status - compare online repo and local repo
+
+
+U - untracked files / new files
+A - added / git add <file_name>
+M - modified

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+      h1,
+      h2,
+      li,
+      p {
+        margin: 20px 0px 10px 30px;
+      }
+
+      h2.text-center {
+        text-align: center;
+      }
+      /* h1{
+            margin: 10px;
+        }
+        h2{
+            margin: 10px; 
+        }
+        li{
+            margin: 10px;
+        } */
+      .box {
+        border: 2px solid;
+        padding: 32px;
+        width: 375px;
+        box-shadow: 2px 2px 5px;
+        margin-left: 20px;
+        /* margin: 30px; */
+      }
+
+      /* .box .text-red {
+        color: red;
+      } */
+
+      a.active {
+        color: red;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      a:hover {
+        color: red;
+      }
+
+      /* div.box p.para-2 {
+        border: 1px solid red;
+      } */
+      div.active {
+        border: 10px solid red;
+      }
+
+      .box:hover {
+        border: 10px solid red;
+      }
+      /* 
+      div.active{
+        color: blue;
+      } */
+      /* .text-red{
+        color: red;
+      } */
+
+      /* body{
+            border: 2px solid;
+        } */
+
+      nav {
+        margin-top: 20px;
+      }
+
+      nav li {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./class.html">Class and ID</a>
+          </li>
+          <li>
+            <a href="#" class="active"> Combine Selector </a>
+          </li>
+          <li>
+            <a
+              href="C:\Users\ACER\Desktop\Full Stack Development Course - Shrawan"
+              >Project</a
+            >
+          </li>
+          <li>
+            <a href="./aboutus.html" target="_blank">go to about</a>
+          </li>
+          <li>
+            <a href="./contactus.html">go to contact</a>
+          </li>
+          <li>
+            <a href="./course/python.html">go to python course</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Combine Selector</h1>
+    <h2>Selector</h2>
+    <ul>
+      <li>universal</li>
+      <li>id</li>
+      <li>class</li>
+      <li>element/tag</li>
+    </ul>
+
+    <h2>Combine Selector</h2>
+    <ul>
+      <li>descendent</li>
+      <li>or</li>
+      <li>and</li>
+      <li>general</li>
+      <li>adjacent</li>
+    </ul>
+
+    <h2>Box Sizing</h2>
+    <div class="box">
+      <h2 class="text-center">Box 1</h2>
+      <p class="text-red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        quis magni molestias ipsam iusto unde ducimus illum dignissimos
+        laudantium! Repellat!
+      </p>
+      <br />
+      <p class="text-red para-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        quis magni molestias ipsam iusto unde ducimus illum dignissimos
+        laudantium! Repellat!
+      </p>
+    </div>
+    <br />
+    <div class="box active">
+      <h2 class="text-center">Box 2</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+        autem debitis. Saepe repudiandae natus neque officiis voluptas. Neque
+        error aperiam eligendi, laboriosam voluptate totam natus facere
+        reprehenderit sint! Esse, dicta.
+      </p>
+    </div>
+
+    <br />
+    <div class="box">
+      <h2 class="text-center">Box 3</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+        autem debitis. Saepe repudiandae natus neque officiis voluptas. Neque
+        error aperiam eligendi, laboriosam voluptate totam natus facere
+        reprehenderit sint! Esse, dicta.
+      </p>
+    </div>
+
+    <p class="text-red">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      quis magni molestias ipsam iusto unde ducimus illum dignissimos
+      laudantium! Repellat!
+    </p>
+    <br />
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      quis magni molestias ipsam iusto unde ducimus illum dignissimos
+      laudantium! Repellat!
+    </p>
+    <br />
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      quis magni molestias ipsam iusto unde ducimus illum dignissimos
+      laudantium! Repellat!
+    </p>
+  </body>
+</html>
