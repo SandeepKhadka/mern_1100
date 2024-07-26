@@ -1,0 +1,28 @@
+html syntax
+
+    <tag> ......content </tag>
+
+    Each tag must be closed
+
+examples of tags
+
+    head
+    title
+    body
+
+terms
+
+    tag
+    attributes
+
+
+shortcuts
+
+    to move line hold alt and press up/down arrow key
+    to copy some line or paragraph hold alt + shift and press up/down arrow key
+
+
+Some imp tips
+
+    to move out from file ./
+    to move out from folder ../
