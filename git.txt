@@ -18,6 +18,10 @@ to create new branch
     git checkout -b <branch_name>
         eg git checkout -b auth
 
+to switch branch
+    git checkout <branch_name>
+     eg git checkout master
+
 
 
 
