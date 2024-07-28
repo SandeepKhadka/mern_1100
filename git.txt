@@ -22,6 +22,12 @@ to switch branch
     git checkout <branch_name>
      eg git checkout master
 
+to merge
+    git merge <branch_name>
+        eg git merge auth
+
+to pull
+    git pull
 
 
 
