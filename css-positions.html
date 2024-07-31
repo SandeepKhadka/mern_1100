@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css Positions</title>
+
+    <style>
+      /* reset css */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+      /* end reset css */
+
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 1px solid;
+      }
+
+      .static {
+        position: static;
+        left: 20px;
+      }
+
+      .relative {
+        position: relative;
+        left: 100px;
+      }
+
+      .absolute {
+        position: absolute;
+        top: 10px;
+        right: 0px;
+        background-color: red;
+        z-index: 3;
+      }
+
+      .fixed {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        background-color: cyan;
+      }
+
+      .sticky {
+        position: sticky;
+        top: 0px;
+        background-color: aquamarine;
+      }
+
+      .wrapper {
+        background-color: antiquewhite;
+        margin-left: 10px;
+      }
+
+      header {
+        position: sticky;
+        top: 0px;
+        z-index: 9999999;
+      }
+      nav ul {
+        display: flex;
+        background-color: #333;
+        padding: 1rem 0.5rem;
+        color: whitesmoke;
+      }
+
+      .sticky-div{
+        border: 3px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">home</a></li>
+          <li><a href="#">home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- <div class="parent"> -->
+    <div class="static box">static</div>
+    <div class="wrapper">
+      <div class="relative box">realtive</div>
+    </div>
+    <div class="absolute box">absolute</div>
+    <div class="fixed box">fixed</div>
+    <div class="sticky-div">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum expedita laborum molestias a, dignissimos odit voluptates. Excepturi sapiente fuga omnis, exercitationem distinctio veritatis itaque mollitia, vero consequatur tempore, rerum impedit?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum expedita laborum molestias a, dignissimos odit voluptates. Excepturi sapiente fuga omnis, exercitationem distinctio veritatis itaque mollitia, vero consequatur tempore, rerum impedit?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum expedita laborum molestias a, dignissimos odit voluptates. Excepturi sapiente fuga omnis, exercitationem distinctio veritatis itaque mollitia, vero consequatur tempore, rerum impedit?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum expedita laborum molestias a, dignissimos odit voluptates. Excepturi sapiente fuga omnis, exercitationem distinctio veritatis itaque mollitia, vero consequatur tempore, rerum impedit?
+        </p>
+
+        <div class="sticky box">sticky</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum expedita laborum molestias a, dignissimos odit voluptates. Excepturi sapiente fuga omnis, exercitationem distinctio veritatis itaque mollitia, vero consequatur tempore, rerum impedit?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum expedita laborum molestias a, dignissimos odit voluptates. Excepturi sapiente fuga omnis, exercitationem distinctio veritatis itaque mollitia, vero consequatur tempore, rerum impedit?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum expedita laborum molestias a, dignissimos odit voluptates. Excepturi sapiente fuga omnis, exercitationem distinctio veritatis itaque mollitia, vero consequatur tempore, rerum impedit?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum expedita laborum molestias a, dignissimos odit voluptates. Excepturi sapiente fuga omnis, exercitationem distinctio veritatis itaque mollitia, vero consequatur tempore, rerum impedit?
+        </p></div>
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        mollitia consequatur voluptates expedita quod repudiandae, consectetur
+        odio laudantium nihil, ea fugit ad tempora, animi delectus voluptatem
+        qui itaque iusto rem.
+      </p>
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        mollitia consequatur voluptates expedita quod repudiandae, consectetur
+        odio laudantium nihil, ea fugit ad tempora, animi delectus voluptatem
+        qui itaque iusto rem.
+      </p>
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        mollitia consequatur voluptates expedita quod repudiandae, consectetur
+        odio laudantium nihil, ea fugit ad tempora, animi delectus voluptatem
+        qui itaque iusto rem.
+      </p>
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        mollitia consequatur voluptates expedita quod repudiandae, consectetur
+        odio laudantium nihil, ea fugit ad tempora, animi delectus voluptatem
+        qui itaque iusto rem.
+      </p>
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        mollitia consequatur voluptates expedita quod repudiandae, consectetur
+        odio laudantium nihil, ea fugit ad tempora, animi delectus voluptatem
+        qui itaque iusto rem.
+      </p>
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        mollitia consequatur voluptates expedita quod repudiandae, consectetur
+        odio laudantium nihil, ea fugit ad tempora, animi delectus voluptatem
+        qui itaque iusto rem.
+      </p>
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        mollitia consequatur voluptates expedita quod repudiandae, consectetur
+        odio laudantium nihil, ea fugit ad tempora, animi delectus voluptatem
+        qui itaque iusto rem.
+      </p>
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        mollitia consequatur voluptates expedita quod repudiandae, consectetur
+        odio laudantium nihil, ea fugit ad tempora, animi delectus voluptatem
+        qui itaque iusto rem.
+      </p>
+    </div>
+    <!-- </div> -->
+  </body>
+</html>
