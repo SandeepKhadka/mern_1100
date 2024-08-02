@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .gridbox {
+        display: grid;
+        grid-template-rows: repeat(5, 100px);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+      }
+      .griditem {
+        border: 1px solid;
+        /* height: 100px; */
+      }
+
+      .griditem:nth-child(2) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: red;
+      }
+
+      /* @media (min-width:576px)4{
+            .gridbox{
+            grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width:992px){
+            .gridbox{
+            grid-template-columns: repeat(4, 1fr);
+
+            }
+        } */
+    </style>
+  </head>
+  <body>
+    <div class="gridbox">
+      <!-- .griditem*5>{item-$} -->
+      <div class="griditem">item-1</div>
+      <div class="griditem">item-2</div>
+      <div class="griditem">item-3</div>
+      <div class="griditem">item-4</div>
+      <div class="griditem">item-5</div>
+    </div>
+  </body>
+</html>
