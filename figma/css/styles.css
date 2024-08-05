@@ -20,11 +20,6 @@ a {
 
 /* end reset css */
 
-/* nav{
-    display: flex;
-    justify-content: space-between;
-} */
-
 header {
   display: flex;
   justify-content: space-between;
@@ -36,7 +31,6 @@ header {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  /* width: 1000px; */
 }
 
 .logo-container {
@@ -48,63 +42,54 @@ header {
 
 nav ul {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 1rem
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cross {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .drawer {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-between;
-  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: orange;
+  padding: 2rem;
+  transform: translateX(100%);
+  transition: transform 0.5s;
 }
 
-.drawer nav {
-  /* flex-grow: 1; */
-}
-
-
-.cross {
-  display: none;
-}
-
-@media (max-width: 767px) {
-  .drawer {
-    display: none;
-  }
-
-  .open {
-    display: initial;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: orange;
-    padding: 2rem;
-  }
-
-  .cross {
-    display: initial;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem
-  }
+.drawer.open {
+  transform: translateX(0%);
+  transition: transform 0.5s;
 }
 
 @media (min-width: 768px) {
-  /* .drawer{
-        display: none;
-    } */
-
-  .menu-btn {
+  .drawer,
+  .open {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    transform: none;
+    background-color: transparent;
+  }
+  .menu-btn,
+  .cross {
     display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 0px;
   }
 }
