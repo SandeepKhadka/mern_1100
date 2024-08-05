@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* reset css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: rgba(255, 0, 0, 0.05); */
+  font-family: "Rubik", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* end reset css */
+
+/* nav{
+    display: flex;
+    justify-content: space-between;
+} */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 1000px; */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-grow: 1;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem
+}
+
+.drawer {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawer nav {
+  /* flex-grow: 1; */
+}
+
+
+.cross {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .drawer {
+    display: none;
+  }
+
+  .open {
+    display: initial;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: orange;
+    padding: 2rem;
+  }
+
+  .cross {
+    display: initial;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem
+  }
+}
+
+@media (min-width: 768px) {
+  /* .drawer{
+        display: none;
+    } */
+
+  .menu-btn {
+    display: none;
+  }
+}
