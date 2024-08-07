@@ -1,6 +1,6 @@
 // print in js terminal
 
-// console.log("First js")
+// console.log(100)
 // console.log("Hello world")
 
 
@@ -76,7 +76,7 @@ age1 = 20
 const GRAVITY = 9.8
 
 let middle_name = "bahadur"
-middle_name = "ok"
+middle_name = null
 
 // function myfunction(){
 
@@ -86,5 +86,17 @@ console.log(middle_name)
 
 
 // GRAVITY = 10
-
 console.log(GRAVITY)
+
+// console.log(fruit1)  // hoisting
+var fruit = "orange"
+
+let fruit1 = "grapes"
+
+// var fruit = "apple" // you can re-declare variables made with var keyword
+
+// let fruit1  --- you cannot redeclare variables made with let
+
+  // 
+
+let inStock  = false
