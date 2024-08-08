@@ -45,3 +45,5 @@ let person1 = {
     phone: 123123213,
   },
 };
+
+// console.log({person1})
