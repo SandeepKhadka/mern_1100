@@ -85,21 +85,9 @@ let hexValue = [
 {
     title : [
         {
-            array : [
-                {
-                    array2 :[
-                        [
-                            [
-                                [[
-
-                                    
-                                ]]
-                            ]
-                        ]
-                    ]
-                }
-            ]
+            
         }
+            
     ],
     hex : "#FF0000"
 },
