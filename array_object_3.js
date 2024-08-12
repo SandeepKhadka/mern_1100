@@ -45,10 +45,10 @@ let new_member = {
 };
 
 house[1].member = new_member
-console.log(house[1].member)
+// console.log(house[1].member)
 // colors.push("white")
-console.log(colors[3])
-console.log(colors)
+// console.log(colors[3])
+// console.log(colors)
 
 let phone = {
   phone1: "981231232",
@@ -77,6 +77,17 @@ let projector = [
   },
 ];
 
+let address1 = {
+  location : "Pokhara",
+  street : "lakeside"
+}
+
+house[2].member[0].address = address1
+
+console.log(house[2].member[0].address)
+
+
+
 // price of projector name-model is Rs amount
 
 // console.log("Project Name:" , projector[0].pName)
@@ -92,15 +103,7 @@ let projector = [
 
 // console.log("hello world")
 // console.log('hello world')
-// console.log(
-//   `price of ${projector[0].pName}-${projector[0].model} is Rs ${projector[0].price}`
-// );
-// console.log(
-//   `price of ${projector[1].pName}-${projector[1].model} is Rs ${projector[1].price}`
-// );
-// console.log(
-//   `price of ${projector[2].pName}-${projector[2].model} is Rs ${projector[2].price}`
-// );
+// 
 
 // The phone number of mName is phone
 
