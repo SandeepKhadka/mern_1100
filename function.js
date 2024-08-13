@@ -1,20 +1,4 @@
-let projector = [
-  {
-    pName: "viewsonic",
-    model: "xyz",
-    price: 10000,
-  },
-  {
-    pName: "acer",
-    model: "xyz-100",
-    price: 20000,
-  },
-  {
-    pName: "acer",
-    model: "xyz-200",
-    price: 50000,
-  },
-];
+
 
 // console.log(
 //   `price of ${projector[0].pName}-${projector[0].model} is Rs ${projector[0].price}`
@@ -70,6 +54,24 @@ function sumOne(num1, num2){
 
 // sumOne(1,2,3,4,4,5,6)  //...rest operator
 
+let projector = [
+  {
+    pName: "viewsonic",
+    model: "xyz",
+    price: 10000,
+  },
+  {
+    pName: "acer",
+    model: "xyz-100",
+    price: 20000,
+  },
+  {
+    pName: "acer",
+    model: "xyz-200",
+    price: 50000,
+  },
+];
+
 function printProjectorsPrice(price1, price2, price3){
     let sum = price1 + price2 + price3
     return sum
@@ -77,7 +79,18 @@ function printProjectorsPrice(price1, price2, price3){
 
 let fieldToBePrinted = "price"
 
-console.log(projector[0].fieldToBePrinted)
+console.log(projector[0][fieldToBePrinted])
+console.log(projector[0]["price"])
 
-// console.log("Sum is Rs",printProjectorsPrice(projector[0].fieldToBePrinted,projector[1].fieldToBePrinted, projector[2].fieldToBePrinted))
 
+console.log("Sum is Rs",printProjectorsPrice(projector[0][fieldToBePrinted],projector[1][fieldToBePrinted], projector[2][fieldToBePrinted]))
+
+
+function printIndirectlyProperty(index, field){
+  console.log(`${field} is: ${projector[index][field]}`)
+}
+
+
+printIndirectlyProperty(0, "pName")
+printIndirectlyProperty(1, "model")
+printIndirectlyProperty(2, "price")
