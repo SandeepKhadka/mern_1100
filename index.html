@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <button>add 3</button>
-    <button>add 4</button>
-    <button>add 5</button>
-    <ul>
-        <li>1</li>
-        <li>2</li>
+  </head>
+  <body>
+    <button onclick="addList(3)">add 3</button>
+    <button onclick="addList(4)">add 4</button>
+    <button onclick="addList(5)">add 5</button>
+    <ul id="list">
+      <li>1</li>
+      <li>2</li>
     </ul>
-</body>
+
+    <script>
+      console.log("js connected");
+
+      function addList(number) {
+        let newLi = document.createElement("li"); // <li></li>
+        newLi.innerText = number; // <li>{number}</li>
+        document.getElementById("list").appendChild(newLi); //append new list to ul
+      }
+    </script>
+  </body>
 </html>

@@ -79,7 +79,8 @@ function printProjectorsPrice(price1, price2, price3){
 
 let fieldToBePrinted = "price"
 
-console.log(projector[0][fieldToBePrinted])
+console.log(projector[0].fieldToBePrinted) // undefined
+console.log(projector[0][fieldToBePrinted]) // value
 console.log(projector[0]["price"])
 
 
