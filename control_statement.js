@@ -61,7 +61,7 @@ if(percentage >= 80){
 
 // switch case syntax
 
-let act = "show" // add, edit, show, delete, 
+let act = "ok" // add, edit, show, delete, 
 
 switch(act){
     case 'add':
