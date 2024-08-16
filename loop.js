@@ -35,9 +35,27 @@
 //     // code to be executed
 // }
 
+// for loop syntax
 
-for (i = 0; i <= 100; i++) {
-  console.log(i);
-}
+// for (i = 0; i <= 100; i++) {
+//   console.log(i);
+// }
 
+//for...of syntax (mainly used in array)
+let array = [1, 22, 3, 42, 53];
 
+// for (i = 0; i <= 4; i++) {
+//   console.log(array[i]);
+// }
+
+// for(let value of array){
+//   console.log(value)
+// }
+
+// for...in loop
+
+// let obj = { a: 1, b: 2, c: 3 };
+
+// for(let key1 in obj){
+//   console.log(obj[key1])
+// }
