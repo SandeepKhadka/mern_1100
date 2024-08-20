@@ -1,0 +1,83 @@
+<!-- 
+    form
+        attributes =>
+            action => page / url => same page
+            method => get, post
+            enctype => file upload
+                multipart/form-data
+    
+    <a title = "Home">Home</a>
+    id, class, title, alt, data-*
+ 
+    FORM CONTROL STATEMENT
+
+    a. input
+            type attribute
+             - text,
+             - email,
+             - password,
+             - number,
+             - date,
+             - time,
+             - file,
+             - url,
+             - radio,
+             - checkbox,
+             - hidden,
+             - submit,
+             - reset,
+             - button,
+             - tel,
+             - range
+             - disable
+        b. textarea
+        c. select-option
+        d. button
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Form</h2>
+    <hr />
+    <form onsubmit="handleSubmit(event)">
+      <div>username : <input type="text" id="username" value="ram" name="username"/></div>
+      <div>password : <input type="password" name="password"/></div>
+      <div>email : <input type="email" name="email"/></div>
+      <div>
+        <label for="terms">Terms and Condition</label>
+        <input type="checkbox" name="terms" id="">
+      </div>
+      <div>
+        <input type="file" name="image" id="">
+      </div>
+      <select name="car" id="">
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <br>
+      <input type="submit">
+    </form>
+
+    <script>
+        const handleSubmit = (event) => {
+            event.preventDefault();
+            console.log(event.target);
+            console.log(event.target.username.value);
+            console.log(event.target.password.value);
+            console.log(event.target.email.value);
+            console.log(event.target.terms.value);
+            console.log(event.target.car.value);
+            console.log("form submitted");
+            
+        }
+    </script>
+  </body>
+</html>
