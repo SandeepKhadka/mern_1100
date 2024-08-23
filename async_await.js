@@ -1,11 +1,3 @@
-/* 
-    Promise
-     - It is an object that handles asynchronous function.
-     - It solves callback hell
-     - pending -> resolve, reject
-
-*/
-
 function task1() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -45,35 +37,24 @@ function task4() {
   });
 }
 
-// callback hell
 
-// task1(() => {
-//   task2(() => {
-//     task3(() => {
-//       task4(() => console.log("All tasks completed"));
-//     });
-//   });
-// });
+async function AllTask() {
+  try {
+    let task1Result = await task1();
+    console.log(task1Result);
 
-// console.log("All tasks completed");
+    let task2Result = await task2();
+    console.log(task2Result);
 
-// Using promise to solve callback hell
+    let task3Result = await task3();
+    console.log(task3Result);
 
-task1()
-  .then((value) => {
-    console.log(value);
-    return task2();
-  })
-  .then((value) => {
-    console.log(value);
-    return task3();
-  })
-  .then((value) => {
-    console.log(value);
-    return task4();
-  })
-  .then((value) => {
-    console.log(value);
+    let task4Result = await task4();
+    console.log(task4Result);
     console.log("All tasks completed");
-  })
-  .catch((error) => console.error(error));
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+AllTask();
