@@ -1,15 +1,38 @@
-const express = require('express')
-const app = express()
+const express = require("express");
+const app = express();
 
-app.get("/",(req, res)=>{
-    res.send("Hello world")
-})
+/* 
+    middleware
+    - it has both res and req and has ability to modify both of them
+    - has access to next middleware
+*/
 
-app.get('/api/todos', function (req, res) {
-    res.send('This is todos')
-  })
+const checkAuthorization = (req, res, next) => {
+  let loggedIn = true;
+  if (!loggedIn) {
+    return res.status(401).send({ msg: "Unauthorized" });
+  }
+  next()
+};
 
-app.listen(8000, ()=>{
-    console.log("Server started");
-    
-})
+
+// app.use(checkAuthorization) // global middleware 
+// const checkAuthorization = (res) => {
+//
+// };
+
+app.get("/dashboard", checkAuthorization, (req, res) => { // route level middleware
+  res.send("dashboard data...");
+});
+
+app.get("/api/orders", checkAuthorization, (req, res) => {
+  res.send("orders data...");
+});
+
+app.get("/api/product", function (req, res) {
+  res.send("product data..");
+});
+
+app.listen(8000, () => {
+  console.log("Server started");
+});
