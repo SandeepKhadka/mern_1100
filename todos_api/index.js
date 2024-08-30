@@ -8,14 +8,23 @@ mongoose
 
 app.use(express.json());
 
-app.post("/api/todos", (req, res) => {
-  console.log("todos post api ......");
-  res.status(200).send("create todo....");
+const Todo = require("./model/Todo.js")
+
+app.post("/api/todos", async (req, res) => {
+  try{
+    let todo = await Todo.create({title : req.body.title})
+    console.log(todo);
+    res.send(todo);
+  }catch(error){
+    console.error(error);
+    res.status(500).send("server error")
+  }
+ 
 });
 
-app.get("/api/todos", (req, res) => {
-  console.log("todos api ......");
-  res.status(200).send("todos data....");
+app.get("/api/todos", async(req, res) => {
+  let todos = await Todo.find()
+  res.status(200).send(todos);
 });
 
 app.listen(8000, () => {
